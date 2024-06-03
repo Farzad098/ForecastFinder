@@ -1,0 +1,77 @@
+/* Reset default margin and padding */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Montserrat', sans-serif; /* Montserrat font */
+}
+
+/* Video background container */
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+/* Video element */
+#bgVideo {
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+/* Main container */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    flex-direction: column;
+}
+
+/* Weather checker container */
+.weatherCheckerContainer {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Original width */
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* Logo */
+.weatherCheckerContainer img {
+    max-width: 200px; /* Adjust the size of the logo */
+    height: auto;
+}
+
+/* Input and button styles */
+input, button {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Attribution section */
+.attribution {
+    margin-top: 20px;
+}
+
+/* Weather API attribution logo */
+.attribution img {
+    max-width: 150px;
+}
